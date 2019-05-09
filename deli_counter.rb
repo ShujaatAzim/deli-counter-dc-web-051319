@@ -7,7 +7,7 @@ def line(katz_deli)
     intro = "The line is currently: "
     line_text = ""
     katz_deli.each_with_index { |name, i|
-    line_text += "#{(i + 1).to_s}. #{name} "
+    line_text += " #{(i + 1).to_s}. #{name}"
    }
    puts intro + line_text
   end
