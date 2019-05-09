@@ -4,10 +4,12 @@ def line(katz_deli)
   if katz_deli == []
     puts "The line is currently empty."
   else
-    print "The line is currently: "
+    intro = "The line is currently: "
+    line_text = ""
     katz_deli.each_with_index { |name, i|
-    print "#{(i + 1).to_s}. #{name} "
+    line_text += "#{(i + 1).to_s}. #{name} "
    }
+   puts intro + line_text
   end
 end
 
